@@ -1,4 +1,132 @@
-header{
-    display: flex;
-    position: fixed;
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+/*-----------------------HEADER--------------------*/
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbarContainer {
+    padding: 0 6.5%;
+
+}
+
+.dasteen {
+    color: #001858;
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dasteen:hover {
+    color: #6246EA;
+}
+
+.dasteen span {
+    color: #6246EA;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#navbarSupportedContent .nav-link {
+    color: #2B2C34;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.collapse li:last-child img {
+    width: 17px;
+    height: 17px;
+}
+
+#myButton {
+    display: flex;
+    padding: 10px 17px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: #6246EA;
+    color: #FFFFFE;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#navbarSupportedContent ul {
+    column-gap: 50px;
+}
+
+#navbarSupportedContent.navbar-collapse {
+    flex-grow: 0;
+    gap: 50px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/*-----------------------MAIN--------------------*/
+/*FIRST_BLOCK*/
+.wrapper_dusteen {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 8.1vw;
+    background: #EFF0F3;
+}
+
+.main_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40vw;
+}
+
+.main_info h1 {
+    color: #2B2C34;
+    font-size: 64px;
+    font-weight: 700;
+    padding-right: 150px;
+}
+
+.main_info p {
+    color: #9A9494;
+    font-size: 20px;
+    font-weight: 400;
+    border-left: 3px solid #2B2C34;
+    margin: 30px 0;
+    padding-left: 12px;
+}
+
+.main_info form input[type=email] {
+    width: 69%;
+    height: 67px;
+    border-radius: 8px;
+    background: #FFFFFE;
+    border: none;
+}
+
+.main_info form input[type=submit] {
+    width: 145px;
+    height: 67px;
+    color: #FFFFFE;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #6246EA;
+    border: none;
+}
+
+.main_info form input[type=submit]::placeholder {
+    color: #C0C0C0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
