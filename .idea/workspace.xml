@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63640c76-2101-45c8-bdf3-7c8b052a652c" name="Changes" comment="fix">
+    <list default="true" id="63640c76-2101-45c8-bdf3-7c8b052a652c" name="Changes" comment="main info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style_main.css" afterDir="false" />
@@ -157,7 +157,7 @@
       <workItem from="1772746402039" duration="2339000" />
       <workItem from="1773151633106" duration="1548000" />
       <workItem from="1773341915496" duration="446000" />
-      <workItem from="1773342446433" duration="6290000" />
+      <workItem from="1773342446433" duration="9957000" />
     </task>
     <task id="LOCAL-00001" summary="exam demo nav header and links">
       <option name="closed" value="true" />
@@ -183,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773342963080</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="main info">
+      <option name="closed" value="true" />
+      <created>1773355582548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773355582549</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +212,7 @@
     <MESSAGE value="exam demo nav header and links" />
     <MESSAGE value="hmm" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="main info" />
+    <option name="LAST_COMMIT_MESSAGE" value="main info" />
   </component>
 </project>
