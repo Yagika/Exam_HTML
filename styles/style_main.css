@@ -250,11 +250,70 @@ header {
 
 .articles_wrapper{
     width: 87vw;
-    margin: 0 auto;
+    margin: 80px auto 30px auto;
 }
 .cards_grid{
     width: 100%;
     background: #FFFFFE;
+}
+.four_articles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 425px;
+    padding: 20px;
+    color: #2B2C34;
+    border-radius: 12px;
+    background: #FFFFFE;
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+}
+.image_block>img{
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+.article h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.profil_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57px;
+}
+.profil_block img{
+    width: 57px;
+    height: 57px;
+    margin-right: 15px;
+}
+.profil_block aside img{
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+}
+
+.profil_block h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+.profil_block p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.profil_block aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
 }
 
 /*FOURTH_BLOCK*/
