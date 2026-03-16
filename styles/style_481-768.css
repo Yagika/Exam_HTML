@@ -1,0 +1,63 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapper_dusteen {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wrapper_dusteen h1 {
+        font-size: 3em;
+    }
+
+    .browse_category h3 {
+        font-size: 1.3em;
+    }
+
+    .main_info {
+        width: 70vw;
+        margin: 0 auto;
+        order: 1;
+    }
+
+    .wrapper_dusteen img {
+        order: 0;
+        margin-top: 50px;
+    }
+
+    .main_info form input[type=email] {
+        width: 53vw;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+
+    .footer_right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer_right h4:after {
+        content: ':';
+    }
+
+    .footer_right section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .subscribe_form {
+        width: 80vw;
+        text-align: center;
+    }
+    .email_subscribe input[type=email] {
+        min-width: 250px;
+        max-width: 59vw;
+    }
+    footer {
+        height: 900px;
+    }
+}
+
+
+

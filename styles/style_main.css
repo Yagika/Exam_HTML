@@ -1,6 +1,8 @@
 * {
     font-family: "Plus Jakarta Sans", sans-serif;
+    scroll-behavior: smooth;
 }
+
 
 /*-----------------------HEADER--------------------*/
 header {
@@ -15,6 +17,16 @@ header {
 
 }
 
+#navbarSupportedContent .nav-link {
+    color: #2B2C34;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.collapse li:last-child img {
+    width: 17px;
+    height: 17px;
+}
 .dasteen {
     color: #001858;
     font-size: 36px;
@@ -32,17 +44,6 @@ header {
     font-weight: 700;
 }
 
-#navbarSupportedContent .nav-link {
-    color: #2B2C34;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.collapse li:last-child img {
-    width: 17px;
-    height: 17px;
-}
-
 #myButton {
     display: flex;
     padding: 10px 17px;
@@ -53,6 +54,11 @@ header {
     color: #FFFFFE;
     font-size: 18px;
     font-weight: 700;
+}
+
+#myButton:focus, #myButton:active {
+    outline: 2px solid #332867;
+
 }
 
 #navbarSupportedContent ul {
@@ -66,6 +72,43 @@ header {
 
 .dropdown-toggle::after {
     display: none !important;
+}
+
+#search-toggle {
+    display: none;
+    width: 100vw;
+}
+
+.search-panel {
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 70px;;
+    display: none;
+}
+
+
+.search-panel input {
+    width: 100vw;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px, rgba(0, 0, 0, 0.07) 0 2px 4px, rgba(0, 0, 0, 0.07) 0 4px 8px, rgba(0, 0, 0, 0.07) 0 8px 16px, rgba(0, 0, 0, 0.07) 0 16px 32px, rgba(0, 0, 0, 0.07) 0 32px 64px;
+}
+
+.search-panel input::placeholder {
+    color: #6246EA;
+    padding-left: 20px;
+}
+
+.search-panel input:focus {
+    outline: 3px solid #6246EA;
+}
+
+#search-toggle:checked ~ .search-panel {
+    display: block;
 }
 
 /*-----------------------MAIN--------------------*/
@@ -147,41 +190,6 @@ header {
     gap: 20px;
 }
 
-#search-toggle {
-    display: none;
-    width: 100vw;
-}
-
-.search-panel {
-    width: 100vw;
-    height: 50px;
-    position: absolute;
-    right: 0;
-    top: 70px;;
-    display: none;
-}
-
-.search-panel input {
-    width: 100vw;
-    height: 40px;
-    padding: 0 15px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px, rgba(0, 0, 0, 0.07) 0 2px 4px, rgba(0, 0, 0, 0.07) 0 4px 8px, rgba(0, 0, 0, 0.07) 0 8px 16px, rgba(0, 0, 0, 0.07) 0 16px 32px, rgba(0, 0, 0, 0.07) 0 32px 64px;
-}
-
-.search-panel input::placeholder {
-    color: #6246EA;
-}
-
-.search-panel input:focus {
-    outline: 3px solid #6246EA;
-}
-
-#search-toggle:checked ~ .search-panel {
-    display: block;
-}
-
 /*SECOND_BLOCK*/
 
 .categories {
@@ -214,7 +222,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     border-radius: 8px;
-    width: 14vw;
+    width: 220px;
     height: 280px;
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
     background: #FFFFFE;
@@ -223,6 +231,11 @@ header {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 68px;
+    transition: 1s;
+}
+.catg:hover {
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+    transition: 1s;
 }
 
 .catg:active {
@@ -231,8 +244,14 @@ header {
 }
 
 .AllCategory {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .catg_white_block {
@@ -247,22 +266,32 @@ header {
 }
 
 /*THIRD_BLOCK*/
+.articles {
+    margin-bottom: 30px;
+}
 
-.articles_wrapper{
+.articles_wrapper {
     width: 87vw;
     margin: 80px auto 30px auto;
 }
-.cards_grid{
+
+.cards_grid {
     width: 100%;
     background: #FFFFFE;
 }
-.four_articles{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.four_articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
     padding-bottom: 80px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
-.article{
+
+.article {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,46 +303,66 @@ header {
     border-radius: 12px;
     background: #FFFFFE;
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    transition: 1s;
 }
-.image_block>img{
+
+.image_block {
+    width: 100%;
+}
+
+.image_block > img {
     border-radius: 12px;
     margin-bottom: 25px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
-.article h3{
+
+.article h3 {
     font-size: 20px;
     font-weight: 700;
+    text-transform: capitalize;
 }
-.profil_block{
+
+.profil_block {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 57px;
 }
-.profil_block img{
+
+.profil_block img {
     width: 57px;
     height: 57px;
     margin-right: 15px;
 }
-.profil_block aside img{
+
+.profil_block aside img {
     width: 6px;
     height: 6px;
     margin: 0 10px;
 }
 
-.profil_block h4{
+.profil_block h4 {
     font-size: 16px;
     font-weight: 600;
 }
-.profil_block p{
+
+.profil_block p {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 0;
 }
-.profil_block aside{
+
+.profil_block aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*align-items: center;*/
+}
+
+.article:hover {
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+    transition: 1s;
 }
 
 /*FOURTH_BLOCK*/
@@ -330,6 +379,7 @@ header {
     align-items: center;
     flex-direction: column;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .circle_post {
@@ -451,6 +501,7 @@ footer > section > p > img {
 }
 
 .footer_right section {
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -471,11 +522,10 @@ footer > section > p > img {
 }
 
 .footer_right {
-    color: #2B2C34;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
     gap: 95px;
+    color: #2B2C34;
 }
 
 .footer_left {
